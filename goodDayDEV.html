@@ -1,0 +1,67 @@
+<html>
+
+<body>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 5rem;
+            animation: shine 1.2s infinite alternate linear;
+        }
+
+        @keyframes shine {
+            from {
+                color: black;
+                transform: rotateX(0deg);
+            }
+
+            to {
+                transform: rotateX(360deg);
+                color: rgba(59, 255, 164, 0.74)
+            }
+        }
+
+        img {
+            /* height: 50vw; */
+            width: 30vw;
+            animation: image 1.2s 1 linear;
+        }
+
+        @keyframes image {
+            from {
+                opacity: 0%;
+                transform: scale(0%);
+                transform: rotate(0deg);
+            }
+
+            to {
+                opacity: 100%;
+                transform: scale(100%);
+                transform: rotate(360deg);
+            }
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <div class="flex">
+        <img src="https://img.razrisyika.ru/kart/38/1200/151607-smaylik-veselyy-22.jpg" class="d-block w-100"
+            alt="Хорошего дня ;)">
+        <h1>Хорошего дня</h1>
+    </div>
+
+
+</body>
