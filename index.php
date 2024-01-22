@@ -1,3 +1,3 @@
 <?php
-requre_once "GoodDayDEV.html";
+requre_once "GoodDayDEV";
 ?>
